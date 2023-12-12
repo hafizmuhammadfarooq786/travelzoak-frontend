@@ -2,10 +2,40 @@
     text-align: center;
 }
 
-.fs-28{
-    font-size: 28px;
+.fs-1{
+    font-size: 1.3rem;
+}
+
+.fs-3{
+    font-size: 3rem;
 }
 
 .fw-7{
     font-weight: 700;
+}
+
+.fw-8{
+    font-weight: 800;
+}
+
+.color-white{
+    color:white;
+}
+
+.banner-content {
+	position: relative;
+}
+
+.banner-content h1 {
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	color: white;
+}
+
+.banner-content span {
+	position: absolute;
+	top: 44%;
+	left: 42%;
+	color: white;
 }
