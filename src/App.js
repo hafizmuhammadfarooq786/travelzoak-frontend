@@ -8,6 +8,7 @@ import AboutUs from "./main/pages/AboutUs";
 
 //import logo from './logo.svg';
 import "./App.css";
+import Footer from "./shared/components/Footer/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/AboutUs" element={<AboutUs />} />
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }
