@@ -1,13 +1,13 @@
 import React from "react";
 
-import NewLetter from "../../../images/newsletter_wrapper.jpg";
+import NewLetterWrapper from "../../../images/newsletter_wrapper.jpg";
 
-export default function () {
+export default function NewLetter() {
   return (
     <div>
       <div
         class="newsletter-wrapper newsletter-overlay"
-        style={{ background: `url(${NewLetter}) no-repeat` }}
+        style={{ background: `url(${NewLetterWrapper}) no-repeat` }}
       >
         <div class="container">
           <div class="row">

@@ -15,8 +15,44 @@ import Car from "../../images/car.png";
 import Passport from "../../images/passport.png";
 
 import { Link } from "react-router-dom";
+import DestinationsList from "../../destinations/components/DestinationsList";
 
 export default function Home() {
+  const DestinationArr = [
+    {
+      title: "Singapore",
+      image: Destination1,
+      duration: "4 Nights / 3 days",
+      hotel: "3 Star hotel",
+      meals: "Breakfast and Dinner",
+      price: "$1599",
+    },
+    {
+      title: "Thailand",
+      image: Destination2,
+      duration: "5 Nights / 4 days",
+      hotel: "3 Star hotel",
+      meals: "Breakfast and Dinner",
+      price: "$2599",
+    },
+    {
+      title: "Vietnam",
+      image: Destination3,
+      duration: "6 Nights / 5 days",
+      hotel: "3 Star hotel",
+      meals: "Breakfast and Dinner",
+      price: "$4599",
+    },
+    {
+      title: "Melbourne",
+      image: Destination4,
+      duration: "4 Nights / 3 days",
+      hotel: "3 Star hotel",
+      meals: "Breakfast and Dinner",
+      price: "$2599",
+    },
+  ];
+
   return (
     <div>
       <div class="slider">
@@ -211,102 +247,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 nopl nopr">
-              <div class="destination-block">
-                <div class="desti-img">
-                  <img src={Destination1} alt="" />
-                  <Link for={`/`} class="desti-title">
-                    Singapore
-                  </Link>
-                  <div class="overlay"></div>
-                  <div class="text">
-                    <h3 class="mb20 text-white">Singapore</h3>
-                    <ul class="angle list-none">
-                      <li>4 Nights / 3 days</li>
-                      <li>3 Star hotel</li>
-                      <li>Breakfast and Dinner</li>
-                    </ul>
-                    <p class="price">$1599</p>
-                    <Link for={`/`} class="btn-link">
-                      Go for Singapore <i class="fa fa-angle-right"></i>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 nopl nopr">
-              <div class="destination-block">
-                <div class="desti-img">
-                  <img src={Destination2} alt="" />
-                  <Link for={`/`} class="desti-title">
-                    Thailand
-                  </Link>
-                  <div class="overlay"></div>
-                  <div class="text">
-                    <h3 class="mb20 text-white">Thailand</h3>
-                    <ul class="angle list-none">
-                      <li>5 Nights / 4 days</li>
-                      <li>3 Star hotel</li>
-                      <li>Breakfast and Dinner</li>
-                    </ul>
-                    <p class="price">$2599</p>
-                    <Link for={`/`} class="btn-link">
-                      Go for Thailand <i class="fa fa-angle-right"></i>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 nopr nopl">
-              <div class="destination-block">
-                <div class="desti-img">
-                  <img src={Destination3} alt="" />
-                  <Link for={`/`} class="desti-title">
-                    Vietnam
-                  </Link>
-                  <div class="overlay"></div>
-                  <div class="text">
-                    <h3 class="mb20 text-white">Vietnam</h3>
-                    <ul class="angle list-none">
-                      <li>6 Nights / 5 days</li>
-                      <li>3 Star hotel</li>
-                      <li>Breakfast and Dinner</li>
-                    </ul>
-                    <p class="price">$4599</p>
-                    <Link for={`/`} class="btn-link">
-                      Go for Vietnam <i class="fa fa-angle-right"></i>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 nopr nopl">
-              <div class="destination-block">
-                <div class="desti-img">
-                  <img src={Destination4} alt="" />
-                  <Link for={`/`} class="desti-title">
-                    Melbourne
-                  </Link>
-                  <div class="overlay"></div>
-                  <div class="text">
-                    <h3 class="mb20 text-white">Melbourne</h3>
-
-                    <ul class="angle list-none">
-                      <li>4 Nights / 3 days</li>
-                      <li>3 Star hotel</li>
-                      <li>Breakfast and Dinner</li>
-                    </ul>
-                    <p class="price">$2599</p>
-                    <Link for={`/`} class="btn-link">
-                      Go for Melbourne <i class="fa fa-angle-right"></i>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <DestinationsList items={DestinationArr} space={false} />
         </div>
       </div>
       {/* service-section */}
